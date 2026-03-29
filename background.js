@@ -19,7 +19,7 @@ chrome.runtime.onInstalled.addListener(()=> {
 
     chrome.contextMenus.create({
         id: "Pedi",
-        title: "Search pedigree for %s",
+        title: "Search PedigreeQuery for %s",
         contexts: ["selection"]
     });
 })
