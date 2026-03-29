@@ -1,0 +1,9 @@
+{
+	"name": "EquiQuery",
+	"description": "Query racehorse information from the context menu",
+	"version" : "1.0",
+	"manifest_version": 3,
+	"permissions" : [
+		"contextMenus"
+	]
+}
