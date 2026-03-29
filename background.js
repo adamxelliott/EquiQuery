@@ -1,4 +1,4 @@
-chrome.runtime.onInstalle.addListener(()=> {
+chrome.runtime.onInstalled.addListener(()=> {
     chrome.contextMenus.create({
         id: "RacingPost",
         title: "Search RP for %s",
