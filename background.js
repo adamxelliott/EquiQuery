@@ -47,14 +47,14 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
                 <input type="hidden" name="searchType" value="Horse">
                 <input type="hidden" name="horseName" value="${query}">
             </form>
-            <script>document.getElementById('f').submit()</script>
+            <script>document.getElementById('searchForm').submit()</script>
         `;
         const encoded = "data:text/html;charset=utf-8," + encodeURIComponent(html);
 
         chrome.tabs.create({ url: encoded });
       break;
 
-    case "searchPedigreeQuery":
+    case "Pedi":
       chrome.tabs.create({
         url: `https://www.pedigreequery.com/cgi-bin/new/check2.cgi?query_type=check&search_bar=horse&wsid=1753184686&h=${query}&g=5&inbred=Standard&x2=n&chefList=0`
       });
